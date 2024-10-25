@@ -1,0 +1,13 @@
+- Fila: Armazena mensagens que serão processadas por consumidores. A ordem de processamento normalmente segue o princípio "Primeiro a entrar, primeiro a sair" (FIFO).
+- Produtor: Envia mensagens para a fila, que serão processadas posteriormente.
+- Consumidor: Recebe e processa as mensagens que estão na fila.
+- Tópicos (Kafka): Em vez de filas, Kafka utiliza tópicos para categorizar e distribuir mensagens entre os consumidores.
+- Partições (Kafka): Dividem os tópicos para que as mensagens sejam processadas em paralelo, permitindo maior escalabilidade.
+
+
+RabbitMQ
+- Utiliza o protocolo AMQP e é bastante usado para garantir a entrega de mensagens.
+BullMQ
+- Usa Redis como backend para gerenciar filas de tarefas. Muito utilizado em Node.js.
+Kafka
+- Focado em streams de dados, permite processamento de eventos em tempo real.
